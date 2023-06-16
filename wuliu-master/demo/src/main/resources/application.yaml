@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: wyj021123
+    #?serverTimezone=UTC解决时区的报错
+    url: jdbc:mysql://localhost:3306/wuliu?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+server:
+  port: 8080
+
+file:
+  ip: localhost
+
+#  mybatis log plugin 使用,如没有这个插件可以删除
+#mybatis:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
